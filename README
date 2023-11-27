@@ -1,0 +1,43 @@
+This is a Blockvila Clone, a cryptocurrency B2P app for buying and selling crypto with naira
+
+## Technologies Used
+
+- Node.js
+- Express.js
+- MongoDB (assumed from the usage of Mongoose and models)
+- Passport.js (Local Strategy for authentication)
+- Bcrypt (for password hashing)
+
+The application utilizes Passport.js for local authentication and includes two different strategies: 'admin' and 'client'. The 'admin' strategy checks for an admin role in the database, and the 'client' strategy authenticates users with a client role.
+
+## Usage
+
+To run the application:
+
+1. Clone the repository.
+2. Install dependencies using `npm install`.
+3. Set up a MongoDB database and add the connection string to the `.env` file.
+4. Run the application using `npm start`.
+
+## Installation
+
+To install dependencies:
+
+```bash
+npm install
+
+Environment Variables
+Create a .env file and add the following variables:
+
+MONGO_URI=YOUR_MONGO_DB_CONNECTION_STRING
+
+Starting the Server
+bash
+npm start
+
+
+Contributions are welcome! Please create an issue or pull request for any improvements or new features.
+
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
+```
